@@ -18,27 +18,27 @@ función Restar en sus 4 combinaciones.
 #include <stdio.h>
 #include <stdlib.h>
 
-int Restar1(int, int);
-int Restar2();
-void Restar3(int, int);
-void Restar4();
+int restar1(int, int);
+int restar2();
+void restar3(int, int);
+void restar4();
 
 int main() {
 	setbuf(stdout, NULL);
 
-	printf("Funcion restar1 : la resta es %d", Restar1(10, 5));
+	printf("Funcion restar1 : la resta es %d", restar1(10, 5));
 
-	printf("\nFuncion restar2 : la resta es %d", Restar2());
+	printf("\nFuncion restar2 : la resta es %d", restar2());
 
-	Restar3(50, 20);
+	restar3(50, 20);
 
-	Restar4();
+	restar4();
 
 	return 0;
 }
 
 
-int Restar1(int primerNumero, int segundoNumero)
+int restar1(int primerNumero, int segundoNumero)
 {
 	int restar;
 
@@ -47,7 +47,7 @@ int Restar1(int primerNumero, int segundoNumero)
 	return restar;
 }
 
-int Restar2()
+int restar2()
 {
 	int restar;
 	int primerNumero = 10;
@@ -58,12 +58,12 @@ int Restar2()
 	return restar;
 }
 
-void Restar3(int primerNumero, int segundoNumero)
+void restar3(int primerNumero, int segundoNumero)
 {
 	printf("\nFuncion restar3 : la resta es %d", (primerNumero - segundoNumero));
 }
 
-void Restar4()
+void restar4()
 {
 
 	int primerNumero = 40;
